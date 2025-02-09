@@ -1,1 +1,63 @@
+/* styles.css */
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* Ensures main takes up available space */
+}
+
+article {
+    flex: 2; /* Takes up 2/3 of the main container */
+    overflow-y: auto; /* Enables vertical scrolling within article */
+    padding: 20px; /* Add some padding for better readability */
+}
+
+aside {
+    flex: 1; /* Takes up 1/3 of the main container */
+    overflow-y: auto; /* Enables vertical scrolling within aside */
+    padding: 20px; /* Add some padding for better readability */
+    border-left: 1px solid #ccc; /* Add a separator between article and aside */
+}
+
+/* Basic styling for header and footer (optional) */
+header {
+    padding: 10px;
+    background-color: #f0f0f0; /* Example background color */
+}
+
+footer {
+    padding: 10px;
+    background-color: #f0f0f0; /* Example background color */
+    text-align: center; /* Center the footer text */
+}
+
+/* Optional: Style the navigation links */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Example link color */
+}
+
+
+/* Optional: Style the image within the article */
+article img {
+    max-width: 100%; /* Make sure image doesn't overflow its container */
+    height: auto;
+    display: block; /* Make the image a block element to center it */
+    margin: 20px auto; /* Center the image horizontally */
+}
